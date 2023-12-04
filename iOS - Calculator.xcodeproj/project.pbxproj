@@ -39,6 +39,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		986B4E7F2B1D0974007F227A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				98FB62F72B04D64300DC2F77 /* Assets.xcassets */,
+				98FB62F42B04D64200DC2F77 /* Main.storyboard */,
+				98FB62F92B04D64300DC2F77 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		986B4E802B1D09AA007F227A /* ApplicationSupport */ = {
+			isa = PBXGroup;
+			children = (
+				98FB62F02B04D64200DC2F77 /* SceneDelegate.swift */,
+				98FB62EE2B04D64200DC2F77 /* AppDelegate.swift */,
+			);
+			path = ApplicationSupport;
+			sourceTree = "<group>";
+		};
+		986B4E812B1D0A0B007F227A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				98B470942B076494003D77D4 /* CustomButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		98FB62E22B04D64200DC2F77 = {
 			isa = PBXGroup;
 			children = (
@@ -58,48 +85,21 @@
 		98FB62ED2B04D64200DC2F77 /* iOS - Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				98FB62EE2B04D64200DC2F77 /* AppDelegate.swift */,
-				98FB63052B04E19900DC2F77 /* Util */,
-				98FB63032B04E18600DC2F77 /* ViewController */,
-				98FB63022B04E18000DC2F77 /* Model */,
-				98FB62F02B04D64200DC2F77 /* SceneDelegate.swift */,
-				98FB62F42B04D64200DC2F77 /* Main.storyboard */,
-				98FB62F92B04D64300DC2F77 /* LaunchScreen.storyboard */,
-				98FB62F72B04D64300DC2F77 /* Assets.xcassets */,
+				98FB63032B04E18600DC2F77 /* ViewControllers */,
+				986B4E812B1D0A0B007F227A /* Views */,
+				986B4E802B1D09AA007F227A /* ApplicationSupport */,
+				986B4E7F2B1D0974007F227A /* Resources */,
 				98FB62FC2B04D64300DC2F77 /* Info.plist */,
 			);
 			path = "iOS - Calculator";
 			sourceTree = "<group>";
 		};
-		98FB63022B04E18000DC2F77 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		98FB63032B04E18600DC2F77 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				98FB63082B04E52800DC2F77 /* Home */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		98FB63052B04E19900DC2F77 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				98B470942B076494003D77D4 /* CustomButton.swift */,
-			);
-			path = Util;
-			sourceTree = "<group>";
-		};
-		98FB63082B04E52800DC2F77 /* Home */ = {
+		98FB63032B04E18600DC2F77 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				98FB63092B04E55D00DC2F77 /* HomeViewController.swift */,
 			);
-			path = Home;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,7 +252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -306,7 +306,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
